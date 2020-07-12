@@ -1,0 +1,61 @@
+==================
+Soal Ujian Akhir Semester
+Matkul : Arsitektu dan organisasi Komputer
+Kelas : TI.17.D3 & TI.17.D4
+Universitas Pelita Bangsa
+2020
+================
+
+
+1. Dalam arsitektur komputer ada 4 komponen Utama CPU, Sebutkan dan jelaskan kegunanaanya?
+2. Control Unit adalah bagian dari komputer yang menggenerasi signal yang mengontrol operasi
+komputer, sebutkan jenis apa saja yang termasuk Control Unit?
+3. Set instruksi (instruction set) adalah sekumpulan lengkap instruksi yang dapat di mengerti oleh sebuah
+CPU. Set instruksi sering juga disebut sebagai bahasa mesin . sebutkan macam-macam format
+Instruksi?
+4. Direct Memory Access (DMA) adalah suatu metode transfer data dari memori komputer atau RAM ke
+suatu bagian dari komputer tanpa memprosesnya menggunakan CPU. Sebutkan kelebihan
+menggunakan DMA ?
+5. Pipeline adalah mesin yang melaksanakan beberapa komputasi yang berbeda secara bersama-sama
+,namun pada saat itu setiap komputasi akan berada dalam tahapan eksekusi yang berbeda. Sebutkan
+dua kategori Pipeline ?
+
+JAWAB:
+
+1).a. arithmetic and logic unit (alu), bertugas membentuk fungsi-fungsi pengolahan data komputer.
+      alu sering disebut mesin bahasa (machine language) karena bagian ini mengerjakan instruksi bahasa mesin yang diberikan padanya.
+      seperti istilahnya, alu terdiri dari dua bagian, yaitu unit arithmetika dan unit logika boolean,
+      yang masing-masing memiliki spesifikasi tugas tersendiri. 
+   b. control unit, bertugas mengontrol operasi cpu dan secara keseluruhan mengontrol komputer sehingga
+      terjadi sinkronisasi kerja antar komponen dalam menjalankan fungsi-fungsi operasinya. termasuk dalam
+      tanggung jawab unit kontrol adalah mengambil instruksi-instruksi dari memori utama dan menentukan jenis instruksi tersebut. 
+   c. registers, adalah media penyimpanan internal cpu yang digunakan saat proses pengolahan data. memori ini bersifat sementara, 
+      biasanya digunakan untuk menyimpan data saat diolah ataupun data untuk pengolahan selanjutnya. 
+   d. cpu interconnections, adalah sistem koneksi dan bus yang menghubungkan komponen internal cpu, yaitu alu, unit kontrol, 
+      dan register-register dan juga dengan bus-bus eksternal cpu yang menghubungkan dengan sisitem lainnya, seperti memori utama, piranti masukan/keluaran. 
+  
+2) A. Single-Cycle CU
+      Proses di CUl ini hanya terjadi dalam satu clock cycle, artinya setiap instruksi ada pada satu cycle, maka dari itu tidak memerlukan state. Dengan demikian fungsi boolean masing-masing control line hanya merupakan fungsi dari opcode saja. Clock cycle harus mempunyai panjang yang sama untuk setiap jenis instruksi.
+   B. Multi-Cycle CUa
+      Unit kontrol yang multi-cycle lebih memiliki banyak fungsi. Dengan memperhatikan state dan opcode, fungsi boolean dari masing-masing outputcontrol line dapat ditentukan. Masing-masingnya akan menjadi fungsi dari 10 buah input logic. Jadi akan terdapat banyak fungsi boolean, dan masing-masingnya tidak sederhana. Pada cycle ini, sinyal kontrol tidak lagi ditentukan dengan melihat pada bit-bit instruksinya. Bit-bit opcode memberitahukan operasi apa yang selanjutnya akan dijalankan CPU, bukan instruksi cycle selanjutnya. 
+
+3) format intruksi
+ Op Code Alamat
+• Kode Operasi (Op Code) direpresentasikan dengan singkatan-singkatan yang disebut mnemonic.
+• Contoh Mnemonic
+o ADD = Penambahan
+o SUBB = Pengurangan
+o LOAD = Muatkan data ke memori
+
+4) Keunggulan dari DMA : 
+   Performance komputer sistem ditingkatkan dengan transfer data langsung antara memori dan I/O devices,
+   tidak melibatkan CPU. CPU dibebas tugaskan dari transfer data. Transfer data jadi lebih cepat
+    - Dapat menirukan sebagian fungsi processor 
+   - Dapat mengambil alih fungsi prosesor yang berhubungan dengan transfer data 
+   - CPU dapat melakukan manajemen operasi baca tulis (transfer data) dengan baik dan juga dapat menyelsaikan instruksi yang lain. 
+   - Mendapat informasi tentang jumlah data bit yang ditransfer, alamat dari device dan memory yang diperlukan dan arah dari aliran data.
+
+5) 1. Pipeline Unit Arithmetic
+      • Berguna Untuk Operasi Vektor
+   2. Pipeline Unit Instruction
+      • Berguna untuk komputer yang mempunyai set intruksi yang segerhana
